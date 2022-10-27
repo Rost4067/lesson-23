@@ -1,0 +1,161 @@
+{
+  "id": "4ab3c284-4cba-4db0-b03e-d7833324a88e",
+  "version": "2.0",
+  "name": "homework_26",
+  "url": "https://www.saucedemo.com",
+  "tests": [{
+    "id": "cf46cf56-1e10-409b-b2d3-b0ed361aef1d",
+    "name": "Test1",
+    "commands": [{
+      "id": "7f0ae7f0-f2c3-4698-88d7-732ceb5c92c4",
+      "comment": "open web site",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3ef06608-1f2b-4114-919b-a039df5c8f30",
+      "comment": "set size for window",
+      "command": "setWindowSize",
+      "target": "1094x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c7ffc84e-13c3-40b8-b2f9-d9c4ccf3688c",
+      "comment": "click on UserName field",
+      "command": "click",
+      "target": "id=user-name",
+      "targets": [
+        ["css=*[data-test=\"username\"]", "css:data-attr"],
+        ["id=user-name", "id"],
+        ["name=user-name", "name"],
+        ["css=#user-name", "css:finder"],
+        ["xpath=//input[@id='user-name']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3c25fb91-ed4a-42ac-b27d-d3fcd420ab13",
+      "comment": "Enter user name = standard_user",
+      "command": "type",
+      "target": "id=user-name",
+      "targets": [
+        ["css=*[data-test=\"username\"]", "css:data-attr"],
+        ["id=user-name", "id"],
+        ["name=user-name", "name"],
+        ["css=#user-name", "css:finder"],
+        ["xpath=//input[@id='user-name']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "standard_user"
+    }, {
+      "id": "638a80f9-4d24-4592-85d4-8b57d7504949",
+      "comment": "click on password field",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["css=*[data-test=\"password\"]", "css:data-attr"],
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ed64ff84-1866-4a28-9ae0-1cdb5f9b1280",
+      "comment": "Enter passwor = secret_sauce",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["css=*[data-test=\"password\"]", "css:data-attr"],
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "secret_sauce"
+    }, {
+      "id": "2d840412-348a-47a4-8ec6-1907ddd7d496",
+      "comment": "Click Login Button",
+      "command": "click",
+      "target": "id=login-button",
+      "targets": [
+        ["css=*[data-test=\"login-button\"]", "css:data-attr"],
+        ["id=login-button", "id"],
+        ["name=login-button", "name"],
+        ["css=#login-button", "css:finder"],
+        ["xpath=//input[@id='login-button']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "065a7d46-b616-497b-b859-45b7c19f61ad",
+      "comment": "Click on link for the first item",
+      "command": "click",
+      "target": "css=#item_4_title_link > .inventory_item_name",
+      "targets": [
+        ["css=#item_4_title_link > .inventory_item_name", "css:finder"],
+        ["xpath=//a[@id='item_4_title_link']/div", "xpath:idRelative"],
+        ["xpath=//a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "619ed450-4700-4062-bcb5-1c2b4efecd68",
+      "comment": "carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.",
+      "command": "assertNotText",
+      "target": "css=.inventory_details_desc",
+      "targets": [
+        ["css=.inventory_details_desc", "css:finder"],
+        ["xpath=//div[@id='inventory_item_container']/div/div/div[2]/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div[2]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6d09493e-49cd-486d-b701-394a71edd3ed",
+      "comment": "Click Menu",
+      "command": "click",
+      "target": "id=react-burger-menu-btn",
+      "targets": [
+        ["id=react-burger-menu-btn", "id"],
+        ["css=#react-burger-menu-btn", "css:finder"],
+        ["xpath=//button[@id='react-burger-menu-btn']", "xpath:attributes"],
+        ["xpath=//div[@id='menu_button_container']/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Open Menu')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "76582d11-3d68-48b7-9248-48d3a9dfbf0f",
+      "comment": "Click Logout",
+      "command": "click",
+      "target": "id=logout_sidebar_link",
+      "targets": [
+        ["id=logout_sidebar_link", "id"],
+        ["css=#logout_sidebar_link", "css:finder"],
+        ["xpath=//a[contains(text(),'Logout')]", "xpath:link"],
+        ["xpath=//a[@id='logout_sidebar_link']", "xpath:attributes"],
+        ["xpath=//div[@id='menu_button_container']/div/div[2]/div/nav/a[3]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[2]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "2f4f4977-397c-418e-bb0c-1fe56525dc84",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["cf46cf56-1e10-409b-b2d3-b0ed361aef1d"]
+  }],
+  "urls": ["https://www.saucedemo.com/"],
+  "plugins": []
+}
